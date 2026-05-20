@@ -18,3 +18,14 @@ Follow these simple steps to get started:
    ```
    This command will start the development server and open the application in your browser. Happy coding! 🎉
 
+## 💡 Example
+
+To see a working example of Blockly Pygame Zero (TypeScript), navigate to the `example/` directory.
+
+```bash
+cd example
+bun install
+bun run index.ts
+```
+
+This will launch a sample application demonstrating how to integrate and use the Blockly Pygame Zero blocks.
