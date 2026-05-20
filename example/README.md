@@ -17,7 +17,11 @@ This directory contains a working example of how to use the Blockly Pygame Zero 
 
 3. **Run the Example Application:**
    ```bash
-   bun run index.ts
+   bun run build:example
+   cd example
+   # To start a static web server, you can use `bunx sirv-cli` (after installing `sirv-cli` globally or locally):
+   # bun install -g sirv-cli
+   # bunx sirv-cli
    ```
    This command will start a local development server and open the example in your web browser. You can then interact with the Blockly workspace and see the Pygame Zero blocks generate code.
 
