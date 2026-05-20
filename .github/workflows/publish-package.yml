@@ -12,12 +12,12 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
+          bun-version: latest
           registry-url: https://npm.pkg.github.com/
           scope: '@cmcrobotics'
       - run: bun install
-      - run: npm publish
+      - run: bun publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
