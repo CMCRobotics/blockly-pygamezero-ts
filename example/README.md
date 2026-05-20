@@ -16,19 +16,12 @@ This directory contains a working example of how to use the Blockly Pygame Zero 
    This will install all the necessary packages for the example.
 
 3. **Run the Example Application:**
+
    ```bash
    bun run build:example
    cd example
-   # To start a static web server, you can use `bunx sirv-cli` (after installing `sirv-cli` globally or locally):
-   # bun install -g sirv-cli
-   # bunx sirv-cli
+   # Start a static web server (for example sirv-cli)
+   bunx sirv-cli
    ```
-   This command will start a local development server and open the example in your web browser. You can then interact with the Blockly workspace and see the Pygame Zero blocks generate code.
 
-## Project Structure
-
-- `index.html`: The main HTML file that loads Blockly and the Pygame Zero blocks.
-- `index.ts`: The TypeScript file that initializes Blockly, defines the workspace, and handles code generation and execution.
-- `blocks.ts`: Defines the custom Blockly blocks for Pygame Zero.
-- `generators.ts`: Contains the code generators for the Pygame Zero blocks.
-- `msg.ts`: Internationalization messages for the blocks.
+   This command will start a local development server and open the example in your web browser. You can then interact with the Blockly workspace and see the Pygame Zero blocks generate Python code.
