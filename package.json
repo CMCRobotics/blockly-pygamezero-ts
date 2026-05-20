@@ -1,0 +1,25 @@
+{
+  "name": "blockly-pygamezero",
+  "version": "1.0.0",
+  "description": "Blockly Pygame Zero block library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target browser",
+    "build:example": "bun build ./example/index.ts --outdir ./example/dist --target browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "blockly": "^11.0.0 || ^12.0.0"
+  },
+  "dependencies": {
+    "@blockly/field-angle": "^6.0.9",
+    "@blockly/field-colour": "^6.0.12"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}
